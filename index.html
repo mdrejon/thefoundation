@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/sp.stickyHeader.css">
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="assets/css/all.css">
+	<!-- <link rel="stylesheet" href="assets/css/style-fatun.css"> -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<script src="assets/js/jquery-1.12.4.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+    <!-- id="myHeader" -->
+    <div class="click-to-close"></div>
+    <header id="myHeader" class="header-section">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-xl-8 col-7">
+                        <div class="top-contact">
+                            <span><i class="fa-solid fa-phone"></i> (44) 7983123679</span>
+                            <span><i class="fa-solid fa-envelope"></i> info@theheavenfoundation.com</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-4 col-md-4 col-5">
+                        <div class="social-link text-right">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xl-3 col-lg-3 col-8">
+                        <a href="#" class="site-logo">
+                            <img src="assets/img/site-logo.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-9 col-xl-9 col-lg-9 col-4"> 
+                        
+                        <div class="site-menu text-right">
+                            <span class="mobile-menu"><i class="fa-solid fa-bars"></i></span> 
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="blog.html"> Blog </a></li>
+                                <li><a href="contact.html"> Contact </a></li>
+                                <li><a href="#"> Users </a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Admin</a></li>
+                                        <li><a href="#">Sign Up</a></li>
+                                        <li><a href="#">Log In</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#donate-model" class="donate-btn"> DONATE NOW </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        
+        <!-- Modal -->
+        <div class="modal fade" id="donate-model" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">You are donating to : <b>Help 100 children for their education</b></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-xl-12">
+                            <div class="mb-3">
+                                <label for="amount" class="form-label"><b>How much would you like to donate?</b></label>
+                                <input type="text" class="form-control" id="amount" placeholder="Your Amount (USD)">
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xl-6">
+                            <div class="mb-3">
+                                <label for="lastname" class="form-label"><b>First Name*</b></label>
+                                <input type="text" class="form-control" id="lastname" placeholder="First Name">
+                            </div> 
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xl-6">
+                            <div class="mb-3">
+                                <label for="firstname" class="form-label"><b>Last Name *</b></label>
+                                <input type="email" class="form-control" id="firstname" placeholder="Last Name">
+                            </div> 
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xl-6">
+                            <div class="mb-3">
+                                <label for="email" class="form-label"><b>Email </b></label>
+                                <input type="email" class="form-control" id="firstname" placeholder="Email Address">
+                            </div> 
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xl-6">
+                            <div class="mb-3">
+                                <label for="phone" class="form-label"><b>Phone </b></label>
+                                <input type="number" class="form-control" id="phone" placeholder="Phone Number">
+                            </div> 
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xl-6">
+                            <div class="mb-3">
+                                <label for="address" class="form-label"><b>Address </b></label>
+                                <textarea name="address" class="form-control" id="address"cols="10" rows="5"></textarea> 
+                            </div> 
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xl-6">
+                            <div class="mb-3">
+                                <label for="note" class="form-label"><b>Additional Note </b></label>
+                                <textarea name="note" class="form-control" id="note" cols="10" rows="5"></textarea> 
+                            </div> 
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-xl-12">
+                            <div class="mb-3 text-center">
+                               <a href="#" class="theme-btn bg-btn donate-btn"> Donate Now</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+  
+        <div class="left-menu">
+            <span class="close-menue"><i class="fa-solid fa-xmark"></i></span>
+            <a href="#" class="site-logo">
+                <img src="assets/img/site-logo.jpeg" class="img-fluid" alt="">
+            </a>
+            <div class="site-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html"> Blog </a></li>
+                    <li><a href="contact.html"> Contact </a></li>
+                    <li><a href="#"> Users </a></li>
+                    <li><a href="#" class="donate-btn"> DONATE NOW </a></li>
+                </ul>
+            </div>
+
+            <div class="social-link text-right">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero-section"> 
+        <div class="hero-slider owl-carousel">
+            <div class="single-hero-slider" style="background-image: url('assets/img/new-slide1.jpg');"> 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-6 col-md-6">
+                            <div class="hero-content">
+                                <h2>BEST CHARITY WEBSITE</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, assumenda.</p>
+
+                                <a href="#" class="bg-btn theme-btn">Donate Now</a>
+                                <a href="#" class="borderd-btn theme-btn">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-md-6">
+                            <div class="hero-img">
+                                <img src="assets/img/new-slide1-1.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-hero-slider" style="background-image: url('assets/img/new-slide3.jpg');"> 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-6 col-md-6">
+                            <div class="hero-content">
+                                <h2>BEST CHARITY WEBSITE</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, assumenda.</p>
+
+                                <a href="#" class="bg-btn theme-btn">Donate Now</a>
+                                <a href="#" class="borderd-btn theme-btn">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-md-6">
+                            <div class="hero-img">
+                                <img src="assets/img/new-slide2-1.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+     <!-- Hero Section -->
+     <!-- About Section -->
+     <section class="about-section section-padding">
+         <div class="container">
+             <div class="row">
+                 <div class="col-xl-4 col-md-4 col-xl-4">
+                     <div class="about-wrap" style="background-image: url('assets/img/style-box-1.jpg');">
+                        <span>Story About Us</span>
+                        <h2>Who are we?</h2>
+                        <p>Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo t non mi porta gravida at eget metus. </p>
+                        <a href="#"> Learn More</a>
+                    </div>
+                 </div>
+                 <div class="col-xl-8 col-md-8 col-xl-8">
+                     <div class="urgent-donate about-wrap" style="background-image: url('assets/img/urgent-donate.jpg');">
+                        <span>Urgent Donate</span>
+                        <a href="#"> <h2>Stop Syria’s Hunger</h2></a>
+                        <p>Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo t non mi porta gravida at eget metus. </p> 
+
+                        <a href="#"> Learn More</a>
+
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="donate-meta">
+                            <span>80% Donated/ <b>80% Donated/$59,666 To Go</b></span>
+
+                        </div>
+                        <a href="#" class="theme-btn bg-btn"> Donate Now</a>
+                    </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <!-- About Section -->
+     <!-- OUR CAUSES  -->
+     <section class="our-causes section-padding">
+         <div class="container">
+             <div class="row justify-content-center">
+                 <div class="col-lg-6 col-xl-8 col-md-8 ">
+                     <div class="section-title text-center">
+                        <h3>OUR <span>CAUSES</span> </h3>
+                        <div class="title-divider">
+                            <span class="divider-1"></span>
+                            <span class="divider-2"></span>
+                            <span class="divider-3"></span>
+                            <span class="divider-2"></span> 
+                            <span class="divider-1"></span>
+                        </div>
+   
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                     </div>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-lg-4 col-xl-4 col-md-4">
+                     <div class="single-causes">
+                         <div class="cause-feature-img">
+                             <img src="assets/img/cause-1.jpg" class="img-fluid" alt="">
+                         </div>
+                         <div class="cause-content text-center boxshadow">
+                                <h4>Help to Homeless peoples</h4>
+                                <div class="rise-fund">
+                                    <span>$1,300</span> of $1,500 raised 
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <a href="#" class="theme-btn bg-btn">Read More</a>
+                                <a href="#" class="theme-btn bg-btn">Donate Now</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-lg-4 col-xl-4 col-md-4">
+                     <div class="single-causes">
+                         <div class="cause-feature-img">
+                             <img src="assets/img/cause-1.jpg" class="img-fluid" alt="">
+                         </div>
+                         <div class="cause-content text-center boxshadow">
+                                <h4>Help to Homeless peoples</h4>
+                                <div class="rise-fund">
+                                    <span>$1,300</span> of $1,500 raised 
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <a href="#" class="theme-btn bg-btn">Read More</a>
+                                <a href="#" class="theme-btn bg-btn">Donate Now</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-lg-4 col-xl-4 col-md-4">
+                     <div class="single-causes">
+                         <div class="cause-feature-img">
+                             <img src="assets/img/cause-1.jpg" class="img-fluid" alt="">
+                         </div>
+                         <div class="cause-content text-center boxshadow">
+                                <h4>Help to Homeless peoples</h4>
+                                <div class="rise-fund">
+                                    <span>$1,300</span> of $1,500 raised 
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <a href="#" class="theme-btn bg-btn">Read More</a>
+                                <a href="#" class="theme-btn bg-btn">Donate Now</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-lg-4 col-xl-4 col-md-4">
+                     <div class="single-causes">
+                         <div class="cause-feature-img">
+                             <img src="assets/img/cause-1.jpg" class="img-fluid" alt="">
+                         </div>
+                         <div class="cause-content text-center boxshadow">
+                                <h4>Help to Homeless peoples</h4>
+                                <div class="rise-fund">
+                                    <span>$1,300</span> of $1,500 raised 
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <a href="#" class="theme-btn bg-btn">Read More</a>
+                                <a href="#" class="theme-btn bg-btn">Donate Now</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-lg-4 col-xl-4 col-md-4">
+                     <div class="single-causes">
+                         <div class="cause-feature-img">
+                             <img src="assets/img/cause-1.jpg" class="img-fluid" alt="">
+                         </div>
+                         <div class="cause-content text-center boxshadow">
+                                <h4>Help to Homeless peoples</h4>
+                                <div class="rise-fund">
+                                    <span>$1,300</span> of $1,500 raised 
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <a href="#" class="theme-btn bg-btn">Read More</a>
+                                <a href="#" class="theme-btn bg-btn">Donate Now</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-lg-4 col-xl-4 col-md-4">
+                     <div class="single-causes">
+                         <div class="cause-feature-img">
+                             <img src="assets/img/cause-1.jpg" class="img-fluid" alt="">
+                         </div>
+                         <div class="cause-content text-center boxshadow">
+                                <h4>Help to Homeless peoples</h4>
+                                <div class="rise-fund">
+                                    <span>$1,300</span> of $1,500 raised 
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <a href="#" class="theme-btn bg-btn">Read More</a>
+                                <a href="#" class="theme-btn bg-btn">Donate Now</a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <!-- OUR CAUSES  -->
+    
+     <!-- Volunteer section --> 
+     <section class="volunteer-section section-padding" style="background-image: url('assets/img/volientiar.jpg');">
+        
+        <div class="container">
+            <div class="voluenteer-absulate">
+                <img src="assets/img/vol-02.png" class="img-fluid" alt="">
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="voluenteer-content">
+                        <h2> Become a Proud <br> <span>Volunteer</span></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis incidunt dolorem officiis in corrupti similique necessitatibus saepe velit? Mollitia, ipsum!</p>
+                        <a href="#" class="theme-btn bg-btn mt-3">Apply Here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Volunteer section --> 
+
+     <!-- Gallery Section  -->
+     <section class="gallery-section section-padding">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-xl-8 col-md-8 ">
+                    <div class="section-title text-center">
+                       <h3>our <span> gallery </span> </h3>
+                       <div class="title-divider">
+                           <span class="divider-1"></span>
+                           <span class="divider-2"></span>
+                           <span class="divider-3"></span>
+                           <span class="divider-2"></span> 
+                           <span class="divider-1"></span>
+                       </div>
+    
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+             <div class="row">
+                 <div class="col-lg-12">
+                     <div class="image-gellary owl-carousel">
+                         <div class="single-gallery">
+                             <img src="assets/img/glry-img.jpg" class="img-fluid" alt="">
+                             <div class="gallery-absulate">
+                                 <a class="glry-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                 <a class="glry-btn" href="#"><i class="fa-solid fa-link"></i></a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+     </section>
+     <!-- Gallery Section  -->
+     <!-- Event Section -->
+     <section class="event-section section-padding">
+         <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-xl-8 col-md-8 ">
+                    <div class="section-title text-center">
+                       <h3>UPCOMING  <span> EVENTS </span> </h3>
+                       <div class="title-divider">
+                           <span class="divider-1"></span>
+                           <span class="divider-2"></span>
+                           <span class="divider-3"></span>
+                           <span class="divider-2"></span> 
+                           <span class="divider-1"></span>
+                       </div>
+    
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-xl-6 col-md-6">
+                    <div class="single-event boxshadow">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="event-meta">
+                                    <span class="event-date">20</span>
+                                    <span class="event-month">April</span>
+                                    <span class="event-year">2022</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-4 col-md-4">
+                                <div class="event-img">
+                                    <img src="assets/img/event.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-5 col-md-5">
+                                <div class="event-content"> 
+                                    <a href="#"><h4>WordCamp Paris</h4></a>
+                                    <span><i class="fa-regular fa-clock"></i> 8:30 am 4:30 pm</span>
+                                    <span><i class="fa-solid fa-location-dot"></i> Ronald McDonald</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 col-md-6">
+                    <div class="single-event boxshadow">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="event-meta">
+                                    <span class="event-date">20</span>
+                                    <span class="event-month">April</span>
+                                    <span class="event-year">2022</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-4 col-md-4">
+                                <div class="event-img">
+                                    <img src="assets/img/event.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-5 col-md-5">
+                                <div class="event-content"> 
+                                    <a href="#"><h4>WordCamp Paris</h4></a>
+                                    <span><i class="fa-regular fa-clock"></i> 8:30 am 4:30 pm</span>
+                                    <span><i class="fa-solid fa-location-dot"></i> Ronald McDonald</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 col-md-6">
+                    <div class="single-event boxshadow">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="event-meta">
+                                    <span class="event-date">20</span>
+                                    <span class="event-month">April</span>
+                                    <span class="event-year">2022</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-4 col-md-4">
+                                <div class="event-img">
+                                    <img src="assets/img/event.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-5 col-md-5">
+                                <div class="event-content"> 
+                                    <a href="#"><h4>WordCamp Paris</h4></a>
+                                    <span><i class="fa-regular fa-clock"></i> 8:30 am 4:30 pm</span>
+                                    <span><i class="fa-solid fa-location-dot"></i> Ronald McDonald</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 col-md-6">
+                    <div class="single-event boxshadow">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="event-meta">
+                                    <span class="event-date">20</span>
+                                    <span class="event-month">April</span>
+                                    <span class="event-year">2022</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-4 col-md-4">
+                                <div class="event-img">
+                                    <img src="assets/img/event.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-5 col-md-5">
+                                <div class="event-content"> 
+                                    <a href="#"><h4>WordCamp Paris</h4></a>
+                                    <span><i class="fa-regular fa-clock"></i> 8:30 am 4:30 pm</span>
+                                    <span><i class="fa-solid fa-location-dot"></i> Ronald McDonald</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 col-md-6">
+                    <div class="single-event boxshadow">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="event-meta">
+                                    <span class="event-date">20</span>
+                                    <span class="event-month">April</span>
+                                    <span class="event-year">2022</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-4 col-md-4">
+                                <div class="event-img">
+                                    <img src="assets/img/event.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-5 col-md-5">
+                                <div class="event-content"> 
+                                    <a href="#"><h4>WordCamp Paris</h4></a>
+                                    <span><i class="fa-regular fa-clock"></i> 8:30 am 4:30 pm</span>
+                                    <span><i class="fa-solid fa-location-dot"></i> Ronald McDonald</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 col-md-6">
+                    <div class="single-event boxshadow">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="event-meta">
+                                    <span class="event-date">20</span>
+                                    <span class="event-month">April</span>
+                                    <span class="event-year">2022</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-4 col-md-4">
+                                <div class="event-img">
+                                    <img src="assets/img/event.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-5 col-md-5">
+                                <div class="event-content"> 
+                                    <a href="#"><h4>WordCamp Paris</h4></a>
+                                    <span><i class="fa-regular fa-clock"></i> 8:30 am 4:30 pm</span>
+                                    <span><i class="fa-solid fa-location-dot"></i> Ronald McDonald</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-12 col-xl-12 text-center">
+                    <a href="#" class="theme-btn bg-btn mt-3">View More</a>
+                </div>
+            </div>
+         </div>
+         
+     </section>
+     <!-- Event Section -->
+     <!-- Testimonial Section -->
+     <section class="testi-section section-padding">
+         <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-xl-8 col-md-8 ">
+                    <div class="section-title text-center">
+                       <h3>TESTIMONIAL </span> </h3>
+                       <div class="title-divider">
+                           <span class="divider-1"></span>
+                           <span class="divider-2"></span>
+                           <span class="divider-3"></span>
+                           <span class="divider-2"></span> 
+                           <span class="divider-1"></span>
+                       </div>
+    
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+             <div class="row">
+                 <div class="col-lg-12 col-xl-12 col-md-12">
+                     <div class="testi-slider owl-carousel">
+                         <div class="single-testi">
+                            <div class="row">
+                                <div class="col-lg-4 col-xl-4 col-md-4">
+                                    <div class="testi-img">
+                                        <img src="assets/img/testi-img.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-xl-8 col-md-8">
+                                    <div class="testi-content">
+                                        <span class="test-quote"><i class="fa-solid fa-quote-left"></i></span>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A debitis, dolore eveniet odio molestias repudiandae tempore, voluptas officiis doloremque praesentium ipsam? Facere sed suscipit deleniti saepe dicta repudiandae odio ipsa?</p>
+                                        <a href="#" class="test-profile">Sydur Rahman</a>
+                                        <span class="test-desc"> Founder , Tingtong</span>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                         </div>
+                         <div class="single-testi">
+                            <div class="row">
+                                <div class="col-lg-4 col-xl-4 col-md-4">
+                                    <div class="testi-img">
+                                        <img src="assets/img/testi-img.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-xl-8 col-md-8">
+                                    <div class="testi-content">
+                                        <span class="test-quote"><i class="fa-solid fa-quote-left"></i></span>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A debitis, dolore eveniet odio molestias repudiandae tempore, voluptas officiis doloremque praesentium ipsam? Facere sed suscipit deleniti saepe dicta repudiandae odio ipsa?</p>
+                                        <a href="#" class="test-profile">Sydur Rahman 2</a>
+                                        <span class="test-desc"> Founder , Tingtong</span>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                         </div>
+                         <div class="single-testi">
+                            <div class="row">
+                                <div class="col-lg-4 col-xl-4 col-md-4">
+                                    <div class="testi-img">
+                                        <img src="assets/img/testi-img.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-xl-8 col-md-8">
+                                    <div class="testi-content">
+                                        <span class="test-quote"><i class="fa-solid fa-quote-left"></i></span>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A debitis, dolore eveniet odio molestias repudiandae tempore, voluptas officiis doloremque praesentium ipsam? Facere sed suscipit deleniti saepe dicta repudiandae odio ipsa?</p>
+                                        <a href="#" class="test-profile">Sydur Rahman</a>
+                                        <span class="test-desc"> Founder , Tingtong</span>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <!-- Testimonial Section -->
+     <!-- Blog Section -->
+     <section class="blog-section section-padding">
+         <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-xl-8 col-md-8 ">
+                    <div class="section-title text-center">
+                       <h3>our <span> news </span> </h3>
+                       <div class="title-divider">
+                           <span class="divider-1"></span>
+                           <span class="divider-2"></span>
+                           <span class="divider-3"></span>
+                           <span class="divider-2"></span> 
+                           <span class="divider-1"></span>
+                       </div>
+    
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+             <div class="row"> 
+                 <div class="col-lg-4">
+                    <div class="single-causes">
+                        <div class="cause-feature-img">
+                            <img src="assets/img/cause-1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="cause-content boxshadow">
+                               <h4>Women & Girls Rights</h4>
+                               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, necessitatibus.</p>
+                               <a href="#" class="theme-btn bg-btn">Read More</a> 
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-lg-4">
+                    <div class="single-causes">
+                        <div class="cause-feature-img">
+                            <img src="assets/img/cause-1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="cause-content boxshadow">
+                               <h4>Women & Girls Rights</h4>
+                               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, necessitatibus.</p>
+                               <a href="#" class="theme-btn bg-btn">Read More</a> 
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-lg-4">
+                    <div class="single-causes">
+                        <div class="cause-feature-img">
+                            <img src="assets/img/cause-1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="cause-content boxshadow">
+                               <h4>Women & Girls Rights</h4>
+                               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, necessitatibus.</p>
+                               <a href="#" class="theme-btn bg-btn">Read More</a> 
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-lg-12 col-xl-12 text-center">
+                    <a href="#" class="theme-btn bg-btn mt-3">View More</a>
+                </div>
+             </div>
+         </div>
+     </section>
+     <!-- Blog Section -->
+
+     <!-- Footer Section -->
+     <footer class="footer-section">
+         <div class="top-footer section-padding">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-lg-3 col-xl-3 col-md-3">
+                         <div class="footer-widget">
+                             <img src="assets/img/site-logo.png" class="img-fluid" alt="">
+
+                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, quae!</p>
+                         </div>
+                     </div>
+                     <div class="col-lg-2 col-xl-2 col-md-2">
+                         <div class="footer-widget">
+                            <h5 class="widget-title">Links</h5>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="blog.html"> Blog </a></li>
+                                <li><a href="contact.html"> Contact </a></li> 
+                            </ul>
+                         </div>
+                     </div>
+                     <div class="col-lg-4 col-xl-4 col-md-4">
+                         <div class="footer-widget">
+                            <h5 class="widget-title">Information</h5>
+                            <span><i class="fa-solid fa-phone"></i> (44) 7983123679</span>
+                            <span><i class="fa-solid fa-envelope"></i> info@theheavenfoundation.com</span>
+                            <span><i class="fa-solid fa-location-dot"></i> 92/B Whitechaeppel, London, United Kingdom</span>
+                         </div>
+                     </div>
+                     <div class="col-lg-3 col-xl-3 col-md-3">
+                        <div class="footer-widget">
+                           <h5 class="widget-title">Newsletters</h5>
+                           <form action="#" method="post">
+                               <input type="email" required placeholder="Enter Your Email">
+                               <input type="submit" value="Subscribe Now">
+                           </form>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+         </div>
+         <div class="bottom-footer">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-xl-8 col-md-8 col-xl-8">
+                         <div class="copywritetext">
+                            Copyright © 2022 theheavenfoundation.co.uk | Design & Developed by Smart Framework
+                         </div>
+                     </div>
+                     <div class="col-xl-4 col-md-4 col-xl-4">
+                        <div class="social-link text-right">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </footer>
+     <!-- Footer Section -->
+	
+	<a id="button"><i class="fas fa-chevron-up"></i></a>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- <script src="assets/js/acmeticker.js"></script> -->
+	<!-- <script src="assets/js/jcarousellite_1.0.1c4.js"></script> -->
+	<!-- <script src="assets/js/sp.stickyHeader.js"></script> -->
+	<!-- <script src="assets/js/jquery.dataTables.min.js"></script> -->
+	<script src="assets/js/dataTables.bootstrap5.min.js"></script>
+	<script src="assets/js/sticky-header.js"></script>
+	<script src="assets/js/all.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		var btn = $('#button');
+
+		$(window).scroll(function() {
+		if ($(window).scrollTop() > 300) {
+			btn.addClass('show');
+		} else {
+			btn.removeClass('show');
+		}
+		});
+
+		btn.on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop:0}, '300');
+		});
+	</script>
+</body>
+</html>

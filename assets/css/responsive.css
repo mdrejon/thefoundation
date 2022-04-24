@@ -1,0 +1,407 @@
+
+
+
+/*=================== Basic Responsive Start ======================*/
+@media only screen and (max-width: 1024px){
+    
+
+/*=================== mobile-menu ======================*/
+
+
+}
+
+/*=================== Basic Responsive end ======================*/
+
+
+
+
+/*=================== I Phone 6/7/8 Responsive start ======================*/
+
+@media (max-width: 414px) {
+
+} 
+/*=================== I Phone 5/se Responsive End ======================*/
+
+@media (max-width: 400px) {
+
+}
+
+
+/*=================== I Phone 5/se Responsive start ======================*/
+/*=================== Wide I Phone 5/se Responsive End ======================*/
+
+@media (max-width: 568px) and (min-width: 320px){
+}
+
+
+/*=================== I Phone 5/se Responsive start ======================*/
+
+@media (max-width: 320px) {
+
+
+} 
+/*=================== I Phone 5/se Responsive End ======================*/
+/* Lager Screen*/
+@media (max-width: 1199px) {
+
+}@media (min-width: 1024px) {
+
+}
+
+
+@media only screen and (max-width: 540px){
+}
+
+
+/*=================================Sur Start =======================*/  
+@media (max-width: 767px) and (min-width: 540px) {
+
+
+}
+
+/*=================================Sur Start =======================*/  
+
+
+/*=================================I Pad Start =======================*/  
+@media (max-width: 767px) and (min-width: 1024px) {
+
+}
+
+/*=================================I Pad end =======================*/  
+/*ipad Pro*/
+
+
+
+
+/*=================== Galaxy S5 Responsive Start ======================*/
+
+@media (max-width: 640px) {
+
+}
+/*=================== Galaxy S5 Responsive End ======================*/
+
+/*=================== pixel Responsive start ======================*/
+@media (max-width: 731px) {
+
+}
+/*=================== pixel Responsive start ======================*/
+
+/*=================== pixel 2 Responsive start ======================*/
+@media (max-width: 823px) {
+
+
+  
+}
+/*=================== pixel Responsive start ======================*/
+
+/*=================== pixel 2 Responsive start ======================*/
+/*@media (max-width: 823px) (min-width: 1024px) {*/
+  @media (max-width: 823px) and (min-width: 411px) {
+
+  
+}
+/*=================== pixel Responsive start ======================*/
+
+/*=================== I Pad Responsive Start ======================*/
+@media (max-width: 767px) {
+  
+    .site-logo {
+      position: relative;
+      text-align: center;
+    }
+  
+
+    .nav-menu {
+      display: none;
+    }
+    .mobile-menu span {
+      font-size: 19px;
+      padding-top: 1px;
+      height: auto;
+    }
+    .left-menu {
+      width: 220px;
+    }
+    .mobile-menu {
+      display: block;
+      visibility: visible;
+    }
+    
+.hero-content {
+  padding-top: 0 !important;
+  z-index: 2;
+  position: relative;
+}
+.hero-content h2 {
+  font-size: 20px;
+}
+.hero-content p {
+  font-size: 15px;
+}
+.theme-btn {
+  font-size: 10px;
+  padding: 8px 14px;
+}
+.hero-img img {
+  height: 200px;
+  text-align: ;
+} 
+.hero-img img { 
+  float: right;
+}
+.hero-img {
+  position: relative;
+  margin-top: -152px;
+}
+.owl-prev, .owl-next {
+  height: 30px;
+  width: 30px;
+}
+.owl-prev span, .owl-next span {
+  font-size: 30px !important;
+  line-height:  0.8;
+}
+#myHeader {
+  position: relative;
+}
+ 
+#myHeader {
+  position: relative;
+}
+.to-day {
+  text-align: right;
+}
+
+.b-h-menu ul li a {
+  font-size: 15px; 
+}
+.b-h-menu { 
+  padding-top: 10px;
+}
+.lang.section-button {
+  font-size: 11px;
+  margin-right: 0;
+}
+.top-header {
+  padding: 1px 0px;
+}
+#myHeader.sticky { 
+  position: fixed !important; 
+}
+ 
+.m-footer {
+  position: relative;
+}
+
+.m-footer {
+  position: relative;
+}
+.section-button {
+  font-size: 10px;
+  padding: 4px;
+}
+ 
+ 
+.footer-widget {
+  margin-bottom: 10px;
+}
+.copy-text {
+  font-size: 11px;
+}
+.post-title h5 {
+  font-size: 15px;
+}
+ 
+.latest-news ul li a {
+  font-size: 12px;
+}
+
+.read-more {
+  margin-bottom: 10px;
+  font-size: 11px;
+}
+
+
+.m-header {
+  padding: 10px;
+}
+.m-footer {
+  padding: 9px;
+}
+
+.ads-blok.header {
+  display: none;
+}
+.date-time {
+  text-align: center;
+}
+.social-links {
+  text-align: center;
+}
+.section-padding {
+  padding: 30px 0;
+}
+.date-time span {
+  font-size: 12px;
+}
+.social-links a {
+  font-size: 15px;
+  height: 30px;
+  width: 30px;
+}
+ 
+.nav-item button {
+  padding: 1px 5px !important;
+  font-size: 12px;
+  margin-bottom: 0;
+} 
+#pills-tab {
+  margin-bottom: 0;
+  margin-top: 6px;
+}
+.section-title, .section-title-two {
+  font-size: 15px;
+}
+.single-feature-news h4, .single-feature-news h2 {
+  font-size: 13px;
+}
+.middle-header {
+  padding: 0;
+}
+.site-logo a h2 {
+  margin-bottom: 0;
+} 
+.site-logo a h2 {
+  font-size: 21px;
+}
+ 
+.site-logo-2 a h2 {
+  font-size: 18px;
+}
+.site-logo-2 {
+  text-align: center;
+  margin-top: 9px;
+  display: block;
+}
+.date-time {
+  margin-bottom: 17px;
+}
+
+.middle-header {
+	padding: 7px 0;
+}
+
+.top-contact span {
+  font-size: 13px;
+}
+.about-wrap {
+  margin-bottom: 30px;
+}
+.voluenteer-absulate {
+  display: none;
+}
+.voluenteer-content h2 {
+  font-size: 25px;
+}
+.event-img img {
+  width: 100%;
+}
+.event-content {
+  text-align: center;
+  padding-top: 19px;
+}
+.testi-slider {
+  height: auto;
+}
+.testi-img img {
+  position: relative !important;
+  display: inline-block;
+  height: 100px;
+}
+.testi-img {
+  text-align: center !important;
+  height: auto;
+  padding-top: 20px;
+}
+.test-quote {
+  font-size: 30px;
+}
+.testi-content {
+  margin-bottom: 20px;
+}
+
+
+}
+/*=================== I Pad Responsive End ======================*/
+
+
+@media (max-width: 720px) and (min-width: 540px) {
+
+}
+/*=================== Wide I Pad Pro Responsive Start ======================*/
+@media (max-width: 1200px) and (min-width: 1025px) {
+ 
+}
+/*=================== Wide I Pad Pro Responsive End ======================*/
+
+
+@media (max-width: 767px) and (min-width: 701px) {
+
+}
+
+@media (max-width: 1366px) and (min-width: 1024px) {
+
+}
+
+/*=================== Wide I Pad  Responsive start ======================*/
+@media (max-width: 1024px) and (min-width: 768px) {
+
+}
+
+/*I pad*/
+@media (max-width: 768px) {
+
+}
+/*I pad*/
+@media (max-width: 1024px) and (min-width: 701px) {
+
+}
+
+/*=================== Wide I Pad  Responsive End ======================*/
+@media (max-width: 1024px) {
+
+  
+}
+
+@media (max-width: 991px) {
+  .site-menu ul {
+    display: none;
+    visibility: hidden;
+  }
+  .mobile-menu {
+    display: block;
+    visibility: visible;
+  }
+}
+
+
+
+
+
+@media (max-width: 700px) {
+
+
+@media (max-width: 575px) {
+
+}
+
+@media (max-width: 359px) {
+
+}
+
+@media only screen and (min-width: 1200px){
+
+}
+
+
+
